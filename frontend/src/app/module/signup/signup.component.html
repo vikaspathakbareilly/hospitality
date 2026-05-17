@@ -1,0 +1,63 @@
+<div class="logContainer">
+    <div class="container loginContainer ">
+
+        <div class="card p-4 shadow">
+            <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+
+                <h2 class="mb-4">
+                    Logo
+
+
+                </h2>
+                <h2 class="mb-4">
+                    Signup </h2>
+
+                <div class="mb-3">
+
+
+
+                    <app-inputtext label="Name" type="text" placeholder="Enter Name" [control]="signupForm.controls.name">
+                    </app-inputtext>
+
+                </div>
+
+
+                <div class="mb-3">
+
+
+
+                    <app-inputtext label="Email" type="email" placeholder="Enter email" [control]="signupForm.controls.email">
+                    </app-inputtext>
+
+                </div>
+                <div class="mb-3">
+
+
+
+                    <app-inputtext label="Mobile No" type="text" placeholder="Enter Mobile No" [control]="signupForm.controls.mobile">
+                    </app-inputtext>
+
+                </div>
+                <div class="mb-3">
+
+
+
+
+                    <app-password label="password" type="password" placeholder="Enter password" [control]="signupForm.controls.password">
+                    </app-password>
+                </div>
+
+
+                <div class="mb-3">
+                    <app-dropdown placeholder="Select Gender" label="Gender" [data]="dropDownData" [control]="signupForm.controls.gender"></app-dropdown>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+
+          Signup
+
+        </button>
+            </form>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="logContainer">
+    <div class="container loginContainer ">
+
+        <div class="card p-4 shadow">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+                <h2 class="mb-4">
+                    Logo
+
+
+                </h2>
+                <h2 class="mb-4">
+                    Login Form
+                </h2>
+
+                <div class="mb-3">
+
+
+
+                    <app-inputtext label="Email" type="email" placeholder="Enter email" [control]="loginForm.controls.email">
+                    </app-inputtext>
+
+                </div>
+
+                <div class="mb-3">
+
+
+
+
+                    <app-password label="password" type="password" placeholder="Enter password" [control]="loginForm.controls.password">
+                    </app-password>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+
+          Login
+
+        </button>
+            </form>
+        </div>
+
+    </div>
+</div>

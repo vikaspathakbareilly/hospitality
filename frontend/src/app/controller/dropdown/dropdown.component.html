@@ -1,0 +1,16 @@
+<label class="form-label">
+  {{ label }}
+</label>
+
+<select class="form-control" [formControl]="control">
+    <option value="">{{placeholder}}</option>
+    @for (item of data; track item.id) {
+
+    <option [value]="item.id">
+      {{ item.name }}
+    </option>
+
+  }
+
+    
+</select>

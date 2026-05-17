@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer {
+    width: 100%;
+    max-width: 576px;
+    background: white;
+    padding: 2pt;
+    border-radius: 10px;
+}
