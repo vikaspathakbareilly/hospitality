@@ -1,5 +1,13 @@
-<div class="container">
+<app-sidebar [sidebarOpen]="sidebarOpen()" [class.displayNone]="!share.token()">
+</app-sidebar>
 
+<div class="main" [class.main-collapse]="share.token() && !sidebarOpen()" [class.main-full]="!share.token()">
+    <button class="btn btn-primary menuBtn" [class.displayNone]="!share.token()" (click)="toggleSidebar()">
+
+  ☰
+
+</button>
     <router-outlet>
     </router-outlet>
+
 </div>

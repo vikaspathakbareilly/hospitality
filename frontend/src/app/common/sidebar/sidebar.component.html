@@ -1,0 +1,53 @@
+<div class="sidebar" [class.sidebar-close]="!sidebarOpen">
+
+    <ul class="list-unstyled p-3">
+        <li class="menuItem">
+
+            <img src="./../assets/logo.png" class="img-responsive logo ">
+
+
+        </li>
+
+        <li class="menuItem">
+
+            <i class="bi bi-grid"></i> @if(sidebarOpen){
+
+            <span>
+          Dashboard
+        </span> }
+
+        </li>
+
+        <li class="menuItem">
+
+            <i class="bi bi-people"></i> @if(sidebarOpen){
+
+            <span>
+          Users
+        </span> }
+
+        </li>
+
+        <li class="menuItem">
+
+            <i class="bi bi-file-earmark"></i> @if(sidebarOpen){
+
+            <span>
+          Reports
+        </span> }
+
+        </li>
+
+        <li class="menuItem">
+
+            <i class="bi bi-gear"></i> @if(sidebarOpen){
+
+            <span>
+          Settings
+        </span> }
+
+        </li>
+
+    </ul>
+
+</div>

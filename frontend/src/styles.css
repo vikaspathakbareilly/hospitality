@@ -3,6 +3,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    background: linear-gradient(45deg, #4099ff, #82bcff);
 }
 
 .logContainer {
@@ -18,4 +19,27 @@ body {
     background: white;
     padding: 2pt;
     border-radius: 10px;
+    background: linear-gradient(45deg, #4099ff, #82bcff), ;
+}
+
+.img-responsive {
+    max-width: 100%;
+    width: auto;
+    margin: auto;
+}
+
+.logo {
+    max-height: 70px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.container_fluid.bg {
+    background: linear-gradient(45deg, #4099ff, #82bcff);
+}
+
+.container_fluid {
+    background: #ffff;
 }

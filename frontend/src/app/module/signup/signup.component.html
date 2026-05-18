@@ -4,8 +4,8 @@
         <div class="card p-4 shadow">
             <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
 
-                <h2 class="mb-4">
-                    Logo
+                <h2 class="mb-4 text-center">
+                    <img src="./../assets/logo.png" class="img-responsive logo ">
 
 
                 </h2>
@@ -43,7 +43,7 @@
 
 
 
-                    <app-password label="password" type="password" placeholder="Enter password" [control]="signupForm.controls.password">
+                    <app-password label="Password" type="password" placeholder="Enter password" [control]="signupForm.controls.password">
                     </app-password>
                 </div>
 

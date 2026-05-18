@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { InputtextComponent } from '../../controller/inputtext/inputtext.component';
 import { EmailComponent } from '../../controller/email/email.component';
 import { PasswordComponent } from '../../controller/password/password.component';
 import { DropdownComponent } from '../../controller/dropdown/dropdown.component';
+import { ApiService } from '../../services/api.service';
 @Component({
   selector: 'app-signup',
   standalone: true,
@@ -14,6 +15,7 @@ import { DropdownComponent } from '../../controller/dropdown/dropdown.component'
 })
 export class SignupComponent {
 dropDownData:any=[{id:0, name:"Male"}, {id:0, name:"Female"}]
+private api=inject(ApiService)
  signupForm = new FormGroup({
    name: new FormControl('', [
       Validators.required
@@ -47,8 +49,13 @@ email: new FormControl('', [
 
 
    onSubmit() {
-
+let obj={
+  "emailOrMobile": this.signupForm.value.email,
+ 
+  "password": this.signupForm.value.password
+}
     console.log(this.signupForm.value);
+   
 
    
 
